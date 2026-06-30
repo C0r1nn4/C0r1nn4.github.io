@@ -68,7 +68,10 @@ h3{font-size:19px;margin-bottom:4px;}
 .contact-list li{margin-bottom:6px;font-size:14px;}
 .contact-list i{color:var(--turquoise);width:20px;}
 
-.social-icons{margin-top:18px;}
+.nav-photo{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid var(--turquoise);margin-right:10px;}
+.hero-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--turquoise);float:right;margin-top:4px;}
+@media(max-width:600px){.hero-photo{float:none;display:block;margin:0 0 16px;}}
+.social-icons{margin-top:18px;clear:both;}
 .social-icons a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--turquoise-light);color:var(--teal-deep);margin-right:8px;text-decoration:none;}
 .social-icons a:hover{background:var(--turquoise);color:#fff;}
 
@@ -115,7 +118,10 @@ footer .footer-wrap{max-width:760px;margin:0 auto;}
 <body id="page-top">
 
 <nav class="topnav" id="sideNav">
-  <a class="brand" href="#page-top">Corinna Hankeln</a>
+  <a class="brand" href="#page-top" style="display:flex;align-items:center;">
+    <img src="assets/img/Passbild.jpg" alt="Corinna Hankeln" class="nav-photo">
+    Corinna Hankeln
+  </a>
   <button class="navbar-toggler" onclick="document.getElementById('navList').classList.toggle('open')">&#9776;</button>
   <ul id="navList">
     <li><a class="link" href="#ueber-mich">Über mich</a></li>
@@ -131,6 +137,7 @@ footer .footer-wrap{max-width:760px;margin:0 auto;}
 
   <!-- Über mich -->
   <section id="ueber-mich">
+    <img src="assets/img/Passbild.jpg" alt="Corinna Hankeln" class="hero-photo">
     <div class="eyebrow">Mathematikdidaktik · TU Dortmund</div>
     <h1>Corinna Hankeln</h1>
     <div class="subtitle">Dr. phil. · Akademische Rätin im Hochschuldienst (auf Zeit)</div>
